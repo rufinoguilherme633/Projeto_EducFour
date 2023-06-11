@@ -1,0 +1,53 @@
+:root{
+    --dark-red: #BC2222;
+    --light-red : #D22020;
+    --dark-grey: #737373;
+    --light-grey: #D9D9D9;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+}
+header{
+    color: var(--dark-grey);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 40px;
+    align-items: center;
+    height: 100%;
+}
+main{
+    display: flex;
+    min-height: 34vh;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+.title{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #000;
+}
+.logo{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+.logo img{
+    height: 15vh;
+}
+.social_icons{
+    display: flex;
+    gap: 14px;
+}
+.social{
+    font-size: 2rem;
+}
+.social:hover{
+    color: var(--light-red);
+}

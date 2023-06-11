@@ -1,0 +1,176 @@
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin: 0;
+    /* opcional para remover margens padrão do body */
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    /* height: 100%; */
+    width: 7%;
+    background-color: #BC2222;
+}
+
+.container_logo {
+    /* width: max-content;
+    height: max-content; */
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+}
+
+.images-container_header {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.images-container_header img:hover {
+    opacity: 0.7;
+
+}
+
+
+main {
+    flex-grow: 1;
+    width: auto;
+}
+
+.newspaper {
+    display: flex;
+    flex-direction: row;
+    /* height: 100%; */
+}
+
+.form_newspapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    width: 100%;
+    gap: 30px;
+}
+
+.newspaper_information_text {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.newspaper-image,
+.register-adm-image,
+.registrations-image {
+    width: 6vw;
+}
+
+.input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2.5px solid #737373;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 450px;
+    font-size: 1vw;
+}
+
+.input::placeholder {
+    color: #737373;
+    font-size: 15px;
+}
+
+
+.title {
+    color: #D22020;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.custom-file-input {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-file-input input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.custom-file-input label {
+    display: block;
+    height: 45vh;
+    width: 30vw;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    color: #737373;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .custom-file-input label:hover {
+    background-color: #C4C4C4;
+  } */
+
+.custom-file-label {
+    font-size: 4vw;
+
+}
+
+
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .form_newspapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .custom-file-input label {
+        height: 30vh;
+        width: 90vw;
+        border-radius: 5px;
+    }
+
+    .custom-file-input label .custom-file-label {
+        font-size: 2vw;
+    }
+
+    .images-container_header {
+        flex-direction: row;
+    }
+
+    .custom-file-input {
+        width: auto;
+        max-width: 90vw;
+    }
+}

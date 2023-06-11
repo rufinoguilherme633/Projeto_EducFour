@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="./img/logo.png" />
+    <script src="./js/sideNav.js"></script>
+    <!-- Inclusão do jQuery-->
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<!-- Inclusão do Plugin jQuery Validation-->
+<script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
+    <script src="https://kit.fontawesome.com/121a930925.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/sideNav.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <title>EducFour</title>
+</head>
+
+<body>
+        <header>
+            <a href="./index.html" class="logo">
+                <img src="./img/logo.png" alt="Logo EducFour">
+                <p>EducFour</p>
+            </a>
+            <nav>
+                <i onclick="openNavHalf()" id="icon-half-menu" class="fas fa-bars"></i>
+                <ul id="mySidenav" class="sidenav">
+                    <li>
+                        <a href="#" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+                    </li>
+                    <li>
+                        <a href="./pages/inscription.html">Inscrição</a>
+                    </li>
+                    <li>
+                        <a href="./pages/timeline.html">Cronograma</a>
+                    </li>
+                    <li>
+                        <a href="./pages/newspaper.html">Jornal</a>
+                    </li>
+                    <li>
+                        <a href="./pages/projects.html">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="./pages/about_us.html">Sobre Nós</a>
+                    </li>
+                </ul>
+                <ul class="options">
+                    <li>
+                        <a href="./pages/inscription.html">Inscrição</a>
+                    </li>
+                    <li>
+                        <a href="./pages/timeline.html">Cronograma</a>
+                    </li>
+                    <li>
+                        <a href="./pages/newspaper.html">Jornal</a>
+                    </li>
+                    <li>
+                        <a href="./pages/projects.html">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="./pages/about_us.html">Sobre Nós</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1 class="phrase">“A <span style="color: #D22020;font-weight: 700">educação</span> é a arma mais poderosa que você pode usar para mudar o mundo.”</h1>
+            <img class="comunity" src="./img/home-image.png" alt="Ilustração de uma comunidade">
+        </main>
+        <footer>
+            <div class="social_icons">
+                <a href="https://www.instagram.com/educ.four/" target="blanck">
+                    <div class="social">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </a>
+                <a href="tel:+55 11 95804-145">
+                    <div class="social">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                </a>
+            </div>
+        </footer>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+</body>
+
+</html>

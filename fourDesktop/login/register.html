@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../js/postadm.js" defer type="module"></script>
+    <title>EducFour</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="images-container_header">
+            <a href="./publish_new.html">
+                <img src="../img/newspaper.png" alt="" class="newspaper-image">
+            </a>
+            <a href="./register.html">
+                <img src="../img/register_adm.png" alt="" class="register-adm-image">
+            </a>
+            <a href="./view_subscriptions.html">
+                <img src="../img/registrations.png" alt="" class="registrations-image">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container_logo">
+            <img src="../img/logo.png" alt="" class="logo">
+        </div>
+
+
+        <span class="title">Cadastrar ADM</span>
+
+
+        <form class="form">
+            <div class="user">
+                <span class="text_user">Usuário:</span>
+                <input type="text" required class="input">
+            </div>
+
+            <div class="email">
+                <span class="text_user">E-mail:</span>
+                <input type="e-mail" required class="input">
+            </div>
+        
+            <div class="password">
+                <span class="text_password">Senha:</span>
+                <input type="password" required class="input">
+            </div>
+        
+            <span id="error_message" class="error_message">Mensagem de erro</span>
+            <button type="button" class="button_login" id="saveButton">Salvar</button>
+           
+        </form>
+    </main>
+</body>
+
+</html>

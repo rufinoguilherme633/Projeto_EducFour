@@ -1,0 +1,57 @@
+.text_login{
+    font-size: 3.5rem;
+    color:#D22020;
+    font-weight: 600;
+}
+
+.container_register{
+    display: flex;
+    flex-direction: column;
+}
+
+.text_user,.text_password {
+    color:#D22020;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 7vh;
+    display: flex;
+    height: max-content;
+    align-items: center;
+    padding-top: 9vh;
+}
+
+.input{
+    border-radius: 10px;
+    border: solid 1px #737373;
+    padding: 0.3vw;  
+    width: 22vw;
+    height:4vh;
+}
+
+.button_login{
+    background-color:#D22020 ;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    height: 5vh;
+    width: 8vw;
+    border-radius: 10px;
+    border: none;
+}
+
+.password .user .email{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.text_news{
+
+    width: 22vw;
+    height: 20vh;
+
+}

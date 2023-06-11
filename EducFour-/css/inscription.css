@@ -1,0 +1,236 @@
+.container_register_image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly; 
+   gap: 3vw;
+   padding: 3vw;
+}
+
+.image_register {
+    height: 45vh;
+}
+
+.container_register {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputs_row,.inputsText_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.cep_rg_telefone {
+    gap: 5vw;
+}
+.cep_logradouro_bairro_cidade{
+    gap: 3vw;
+}
+
+.inputs_span_column {
+    display: flex;
+    flex-direction: column;
+}
+.inputs_span_column textarea{
+    max-width: 480px;
+    min-width: 480px;
+}
+.input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2.5px solid #737373;
+    padding: 0.5rem;
+    width: 100%;
+    
+}
+
+
+.input::placeholder, .text_register {
+    color: #737373; /* Cor do placeholder */
+    font-size: 1rem;
+}
+
+.file-input {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+    
+}
+
+.button_register {
+    color: #FFFFFF; /* Cor da letra */
+    background-color: #BC2222; /* Cor do fundo */
+    font-weight: 700; /* Valor numérico */
+    height: max-content;
+    width: max-content;
+    padding: 1.8vh 3vw;
+    border-radius: 16px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;  
+}
+
+.button_register:hover,
+.button_register:active {
+    background-color: #FF4444; /* Cor do fundo quando o mouse está em cima ou quando é clicado */
+}
+.text_user {
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    height: 25vh;
+    width: 25vw;
+    border: none;
+    
+    
+}
+
+.Data_de_Nascimento_Area_que_deseja_atuar{
+gap: 3vw;
+}
+
+
+.inputsText_row {
+    gap: 1vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 1000px){
+    header{
+        height: 100%;
+        justify-content: space-between;
+    }
+    .options{
+        display: none;
+    }
+    #icon-half-menu {
+        display: block;
+    }
+    main{
+        align-content: center;
+        display: flex;
+        height: 100%;
+        padding: 20px;
+        gap: 50px;
+    }
+    .image_register {
+        height: 34vh;
+    }
+    .inputs_span_column textarea{
+        max-width: 280px;
+        min-width: 280px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 100px;
+    }
+}
+@media(max-width: 744px){
+    header{
+        padding-left: 40px;
+    }
+    #inscription{
+        align-items: center;
+    }
+     .text_register{
+         font-size: 0.80rem;
+        
+     }
+     .image_register {
+         display: none;
+    
+     }
+     .inputsText_row{
+        flex-direction: column;
+    }
+    .cep_logradouro_bairro_cidade{
+        flex-direction: column;
+    }
+    .Data_de_Nascimento_Area_que_deseja_atuar{
+        flex-direction: column;
+    }
+   
+ }
+@media(max-width: 640px){
+    #inscription{
+        align-items: center;
+    }
+   header{
+       padding-left: 40px;
+   }
+    .text_register{
+        font-size: 0.70rem;
+       
+    }
+    .image_register {
+        display: none;
+    }
+
+  
+}
+@media(max-width: 522px){
+    #inscription{
+        align-items: center;
+    }
+
+    .title{
+        font-size: 1.5rem;
+    }
+    .text_register{
+        font-size: 0.60rem;
+       
+    }
+
+    .inputsText_row{
+        flex-direction: column;
+    }
+ 
+ }
+@media(max-width: 400px){
+    #inscription{
+        align-items: center;
+    }
+    header{
+        padding-left: 40px;
+        gap: 30%;
+        
+    }
+    .container_register{
+     font-size: 3px;
+    }
+    .title{
+        font-size: 1.3rem;
+    }
+     .text_register{
+         font-size: 0.70rem;
+        
+     }
+     .image_register {
+         
+         display: none;
+     }
+     .text_register{
+        font-size: 0.60rem;
+       
+    }
+    .text_user{
+        height: 20vh;
+        width: 33vw;
+    }
+    .inputsText_row{
+        gap: 30px;
+    }
+
+    .inputsText_row{
+        flex-direction: column;
+    }
+ 
+ }

@@ -1,0 +1,624 @@
+/* Index HOME  */
+
+@media(max-width: 1460px){
+    header{
+        height: 100%;
+        
+    }
+ 
+    main{
+        display: flex;
+        
+        height: 100%;
+        padding: 20px;
+        gap: 50px;
+    }
+    .creators{
+        display: flex;
+        flex-direction: column;
+    }
+    .projects{
+        width: 100%;
+    }
+    .phrase{
+        width: 40%;
+        font-weight: 600;
+        font-size: 2.9rem;
+        text-align: center;
+    }
+    .speeches{
+        flex-direction: column;
+
+    }
+    .event{
+        align-items: center;
+    }
+    .event p{
+        width: 100%;
+        
+    }
+    .event img{
+        width: 50%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 100px;
+    }
+    .paragraph_about_us{
+        font-size: 3rem;
+        width: 70vw;
+        
+    }
+   
+.event p{
+    width: 60vw;
+    font-size: 2rem;
+}
+.event img{
+    display: flex;
+    width: 30vw;
+}
+
+.text_projects {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    max-width: 40%;
+    font-weight: 500;
+    font-size: 2rem;
+}
+}
+
+@media(max-width: 1200px){
+  
+    .paragraph_about_us{
+        font-size: 2rem;
+        width: 60vw;
+     
+    }
+}
+
+
+@media(max-width: 1000px){
+    header{
+        height: 100%;
+    }
+    .options{
+        display: none;
+    }
+    #icon-half-menu {
+        display: block;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 20px;
+        gap: 50px;
+    }
+    .phrase{
+        width: 60%;
+        font-weight: 600;
+        font-size: 2.9rem;
+        text-align: center;
+    }
+   
+    .comunity{
+        height: 80%;
+        width: 80%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 100px;
+    }
+    .paragraph_about_us{
+        font-size: 2rem;
+        width: 70vw;
+     
+    }
+}
+
+@media(max-width: 960px){
+    header{
+        height: 100%;
+    }
+    .options{
+        display: none;
+    }
+    #icon-half-menu {
+        display: block;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 20px;
+        gap: 50px;
+    }
+    .phrase{
+        width: 60%;
+        font-weight: 600;
+        font-size: 2.9rem;
+        text-align: center;
+    }
+
+    .comunity{
+        height: 70%;
+        width: 70%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 100px;
+    }
+    .voltar{
+        font-size: 1.8rem;
+        display: flex;
+      
+        
+    }
+    .paragraph_about_us{
+        font-size: 2rem;
+        width: 60vw;
+       
+    }
+}
+
+@media (max-width:640px){
+    header{
+        height: 100%;
+        padding-left: 30px;
+    }
+    .options{
+        display: none;
+    }
+    #icon-half-menu {
+        display: block;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 20px;
+        gap: 50px;
+    }
+    .event img{
+        display: flex;
+        width: 100%;
+    }
+    
+    .phrase{
+        width: 70%;
+        font-weight: 600;
+        font-size: 2.5rem;
+        text-align: center;
+        
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 100px;
+        
+    }
+    .comunity{
+        height: 70%;
+        width: 70%;
+    }
+
+    .calendario{
+        width: 400px;
+        left: 50%;
+        margin:0 0 0 40px;
+
+    }
+    .paragraph_about_us{
+        font-size: 2rem;
+        width: 60vw;
+       
+    }
+    .event p{
+        width: 60vw;
+        font-size: 1.4rem;
+       
+    }
+    .event img{
+        display: flex;
+        width: 35vw;
+    }
+    
+    .text_projects {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
+        max-width: 80%;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    
+}
+@media (max-width: 490px){
+    header{
+        height: 100%;
+        font-size: 1rem;
+        padding-left: 90px;
+        
+        gap: 2rem;
+}
+    .calendario{
+        margin: 0 0 0 0px;
+        justify-content: center;
+        vertical-align: middle;
+    }
+    
+    .title{
+        font-size: 1.8rem;
+    }
+    .voltar{
+        font-size: 1.8rem;
+        
+    }
+    .fa-solid fa-reply-all{
+        font-size: 1.2rem;
+    }
+    .container_text_aula {
+        width: 60vw;
+        max-height: 50vh;
+        overflow: auto;
+        background-color: #D9D9D9;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 20px;
+    }
+    .container_day_name_numer {
+        font-size: 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text_sclass_schedule{
+        font-size: 3vw;
+    
+    }
+    
+    .text_class{
+        font-size: 3vw;
+    }
+    .class_matter, .class_material_schedule {
+        font-size: 2vw;
+    }
+    .voltar{
+        font-size: 1.4rem;
+        display: flex;
+    }
+    #icon-half-voltar {
+         font-size: 30px;
+    }
+    .paragraph_about_us{
+        font-size: 1.5rem;
+        width: 70vw;
+        
+       
+    }
+    .event p{
+        width: 60vw;
+        font-size: 1.2rem;
+    }
+    .event img{
+        display: flex;
+        width: 35vw;
+    }
+    
+    .text_projects {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
+        max-width: 90%;
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 420px){
+    .calendario{
+       width: 200px;
+    }
+    .container_text_aula {
+        width: 60vw;
+        max-height: 60vh;
+        overflow: auto; 
+        background-color: #D9D9D9;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 30px;
+    }
+    .container_day_name_numer {
+        font-size: 7vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text_sclass_schedule{
+        font-size: 2vw;
+    
+    }
+    
+    .text_class{
+        font-size: 2vw;
+    }
+    .text_sclass_schedule{
+        font-size: 2vw;
+    
+    }
+    
+    .text_class{
+        font-size: 2vw;
+    }
+    .class_matter, .class_material_schedule {
+        font-size: 2vw;
+    }
+    .voltar{
+        font-size: 1.4rem;
+        display: flex;
+    }
+    #icon-half-voltar {
+         font-size: 20px;
+    }
+    .paragraph_about_us{
+        font-size: 1.5rem;
+        width: 65vw;
+      
+       
+    }
+    .event img{
+        display: flex;
+        width: 40vw;
+    }
+}
+@media (max-width:400px){
+    header{
+        height: 100%;
+        padding: 20px;
+ 
+    }
+    .logo img{
+         width: 50%;
+         height: 50%;
+        
+    }
+    .options{
+        display: none;
+    }
+    #icon-half-menu {
+        display: block;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 20px;
+        gap: 50px;
+    }
+    .container_image{
+        display: none;
+    }
+    .phrase{
+        width: 70%;
+        font-weight: 600;
+        font-size: 2.2rem;
+        text-align: center;
+        
+    }
+
+    .comunity{
+        height: 70%;
+        width: 70%;
+    }
+    .sidenav a{
+        font-size: 1.8rem ;
+       
+    }
+    #mySidenav{
+        width: 30%;
+        height: 40%;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 100px;
+        
+    } 
+    .calendario{
+        padding-left: 60px;
+    }
+    .image_register {
+        display: none;
+    }
+    .paragraph_about_us{
+        font-size: 1.5rem;
+        width: 65vw;
+      
+       
+    }
+}
+
+@media (max-width:375px){
+    header{
+        height: 90%;
+        padding: 10px;
+    }
+    header p{
+        font-size: 2rem;
+    }
+   
+    .options{
+        display: none;
+    }
+    #icon-half-menu {
+        display: block;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 20px;
+        gap: 50px;
+    }
+    .container_image{
+        display: none;
+    }
+    .phrase{
+        width: 70%;
+        font-weight: 600;
+        font-size: 2.2rem;
+        text-align: center;
+        
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 100px;
+        
+    }
+    .comunity{
+        height: 80%;
+        width: 80%;
+    }
+    .sidenav a{
+        font-size: 1.4rem ;
+       
+    }
+    #mySidenav{
+      
+        height: 33%;
+    }
+    .calendario{
+     padding-left: 70px;
+    }
+    .image_register {
+        display: none;
+    }
+    .paragraph_about_us{
+        font-size: 1.5rem;
+        width: 90vw;
+  
+       
+    }
+    
+}
+@media (max-width:280px){
+    header{
+        height: 80%;
+       gap: 20px;
+    }
+    header p{
+        font-size: 1rem;
+    }
+    .options{
+        display: none;
+    }
+    #icon-half-menu {
+        display: block;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 20px;
+        gap: 50px;
+    }
+    .container_image{
+        display: none;
+    }
+    .phrase{
+        width: 70%;
+        font-weight: 600;
+        font-size: 1.8rem;
+        text-align: center;
+        
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 100px;
+        
+    }
+    .comunity{
+        height: 60%;
+       
+    }
+    .sidenav a{
+        font-size: 1rem ;
+     
+    }
+    #mySidenav{
+        height: 30%;
+    }
+    .calendario{
+        width: 400px;
+        left: 50%;
+        margin:0 0 0 40px;
+
+    }
+    .calendario{
+        padding-left: 100px;
+       }
+       .paragraph_about_us{
+        font-size: 1.2rem;
+        width: 100vw;
+       
+       
+    }
+}
+
+/* Inscription */
+@media(max-width: 1000px){
+    
+    .container_register{
+        
+        background-color: yellowgreen;
+    }
+    .text_user{
+        background-color: skyblue;
+        width: 90%;
+        /* height: 100%; */
+    }
+    /* .container_image img{
+        height: 80%;
+        width: 80%;
+        background-color: teal;
+    } */
+    .inputsText_row{
+        background-color:salmon;
+        padding-left: 10%;
+        align-items: center ;
+       
+    }
+    .calendario{
+        width: 400px;
+        left: 50%;
+        margin:0 0 0 40px;
+
+    }
+   
+}
+       .image_register {
+        display: none;
+    }

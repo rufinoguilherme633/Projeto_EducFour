@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="../img/logo.png" />
+    <script src="../js/sideNav.js"></script>
+    <script src="../js/index.js" defer type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/121a930925.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sideNav.css">
+    <link rel="stylesheet" href="../css/timeline.css">
+    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="../css/calendar.css">
+    <script type="text/javascript" src="../js/main.js"></script>
+    <title>EducFour</title>
+</head>
+
+<body id="timeline">
+        <header>
+                <p class="title">Calendário das <span style="color: #D22020;font-weight: 700">Aulas</span></span></p>
+            </a>
+            <nav>
+                <i onclick="openNavHalf()" id="icon-half-menu" class="fas fa-bars"></i>
+                <ul id="mySidenav" class="sidenav">
+                    <li>
+                        <a href="#" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+                    </li>
+                    <li>
+                        <a href="../index.html">Página Inicial</a>
+                    </li>
+                    <li>
+                        <a href="./inscription.html">Inscrição</a>
+                    </li>
+                    <li>
+                        <a href="./newspaper.html">Jornal</a>
+                    </li>
+                    <li>
+                        <a href="./projects.html">Projetos</a>
+                    </li>
+                    <li>
+                        <a href="./about_us.html">Sobre Nós</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="conteudo">
+            <div class="calendario">
+                  <main>
+                <h2 id="mes"></h2>
+                <a class="btn-ant" id="btn_ant"></a>
+                <a class="btn-pro" id="btn_prev"></a>
+                  </main>
+            <table>
+                <thead>
+                    <td>Dom</td>
+                    <td>Seg</td>
+                    <td class="colorF clickable" id="terca" >Ter</td>
+                    <td>Qua</td>
+                    <td class="colorF clickable" id="quinta">Qui</td>
+                    <td>Sex</td>
+                    <td class="colorF clickable" id="sabado">Sab</td>
+                </thead>
+                <tbody id="dias">
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td class="color">3</td>
+                        <td>4</td>
+                        <td class="color">5</td>
+                        <td>6</td>
+                        <td class="color">7</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td class="color">3</td>
+                        <td>4</td>
+                        <td class="color"> 5</td>
+                        <td>6</td>
+                        <td class="color">7</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td class="color">3</td>
+                        <td>4</td>
+                        <td class="color"> 5</td>
+                        <td>6</td>
+                        <td class="color">7</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td class="color">3</td>
+                        <td>4</td>
+                        <td class="color"> 5</td>
+                        <td>6</td>
+                        <td class="color">7</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td class="color">3</td>
+                        <td>4</td>
+                        <td class="color"> 5</td>
+                        <td>6</td>
+                        <td class="color">7</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td class="color">3</td>
+                        <td>4</td>
+                        <td class="color"> 5</td>
+                        <td>6</td>
+                        <td class="color">7</td>    
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <h2 id="ano"></h2>
+            </div>
+            
+            </div>
+        </div>
+        <footer>
+            
+        </footer>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+</body>
+
+</html>

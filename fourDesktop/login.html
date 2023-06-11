@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/adm.css">
+    <link rel="stylesheet" href="css/login.css">
+    <!-- <script src="../js/index.js" defer type="module"></script> -->
+    <script src="./js/login.js" defer type="module"></script>
+    <title>Document</title>
+
+</head>
+<body>
+
+    <div class="container_login">
+        <div class="image_header">
+            <img src="../img/logo.png" alt="" class="image_logo">
+        </div>
+
+        <div class="container_register">
+            <span class="text_login">Login</span>
+            <form class="form">
+                <div class="user">
+                    <span class="text_user">Email:</span>
+                    <input id="username_input" type="text" required class="input">
+                </div>
+        
+                <div class="password">
+                    <span class="text_password">Senha:</span>
+                    <input id="password_input" type="password" required class="input">
+                </div>
+        
+                <span id="error_message" class="error_message">Senha ou Usuário Incorreto</span>
+                <button id="botao_login" class="button_login" type="button">Log in</button>
+            </form>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

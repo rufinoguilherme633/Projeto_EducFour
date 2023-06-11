@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="../img/logo.png" />
+    <script src="../js/sideNav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Inclusão do jQuery-->
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <!-- Inclusão do Plugin jQuery Validation-->
+    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
+    <script src="../js/index.js" defer type="module"></script>
+    <script src="../js/inscription.js" defer type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+        defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+        
+    <script src="https://kit.fontawesome.com/121a930925.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sideNav.css">
+    <link rel="stylesheet" href="../css/inscription.css">
+
+    <title>EducFour</title>
+</head>
+
+<body>
+    <header>
+        <p class="title">Venha fazer a <span style="color: #D22020;font-weight: 700">diferença</span></p>
+        </a>
+        <nav>
+            <i onclick="openNavHalf()" id="icon-half-voltar" class="fas fa-bars"></i>
+            <ul id="mySidenav" class="sidenav">
+                <li>
+                    <a href="#" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+                </li>
+                <li>
+                    <a href="../index.html">Página Inicial</a>
+                </li>
+                <li>
+                    <a href="./timeline.html">Cronograma</a>
+                </li>
+                <li>
+                    <a href="./newspaper.html">Jornal</a>
+                </li>
+                <li>
+                    <a href="./projects.html">Projetos</a>
+                </li>
+                <li>
+                    <a href="./about_us.html">Sobre Nós</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="inscription">
+        <div class="container_register_image">
+            <div class="container_image">
+                <img src="../img/image_register.png" alt="" class="image_register">
+            </div>
+
+            <form id="registerForm" class="container_register">
+
+                <input type="text" id="name" name="name" class="input" placeholder="Nome">
+                <input type="email" id="email" name="email" class="input" placeholder="Email">
+
+                <div class="inputs_row cep_rg_telefone">
+                    <input type="text" id="cpf" name="cpf" class="input" placeholder="CPF ou CPNJ">
+                    <input type="text" id="rg" name="rg" class="input" placeholder="RG">
+                    <input type="text" id="telefone" name="telefone" class="input" placeholder="Telefone(Celular)">
+                </div>
+                <div class="inputs_row Data_de_Nascimento_Area_que_deseja_atuar ">
+                    <input type="text" id="Data_de_Nascimento" name="Data_de_Nascimento" class="input"
+                        placeholder="Data de Nascimento">
+                    <select id=cbArea>
+                        <option value="status">Area que deseja Atuar</option>
+                        <option value="doador">Doador</option>
+                        <option value="voluntario">Voluntário</option>
+                        <option value="professor">Professor</option>
+                    </select>
+                </div>
+
+                <div class="inputs_row cep_logradouro_bairro_cidade">
+                    <input type="text" id="cep" name="cep" class="input" placeholder="CEP">
+                    <input type="text" id="logradouro" name="logradouro" class="input" placeholder="Rua"
+                        readonly>
+                    <input type="text" id="bairro" name="bairro" class="input" placeholder="Bairro" readonly>
+                    <input type="text" id="cidade" name="cidade" class="input" placeholder="Cidade" readonly>
+                    <input type="text" id="numero" name="numero" class="input" placeholder="N°">
+                </div>
+                <div class="documents" id="documents">
+                    <span class="text_register">Anexe sua declaração de escolaridade:</span>
+                    <input type="file" id="document" name="document" class="input file-input" accept=".pdf">
+                    <div class="inputsText_row">
+
+                        <div class="inputs_span_column">
+                            <span class="text_register">Motivo da inscrição</span>
+                            <!-- <input type="text" id="" name="" class=" text_user" placeholder=""> -->
+                            <textarea  id="motivo_inscricao" name="" id="" cols="30" rows="" name="" id="" cols="30" name=""
+                                class="input text_user" placeholder="" rows=""></textarea>
+                        </div>
+
+                        <div class="inputs_span_column">
+                            <span class="text_register">Horários de disponibilidade</span>
+                            <!-- <textarea type="text" id="" name="" class="input text_user" placeholder=""> -->
+                            <textarea id="horarios_disponiveis"  name="" id="" cols="30" name="" class="input text_user" placeholder=""
+                                rows=""></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="button_register">Enviar</button>
+            </form>
+
+        </div>
+    </main>
+    <footer>
+    </footer>
+    <script type="text/javascript" src="../js/jquery.mask.js"></script>
+    <script type="text/javascript" src="../js/jquery.mask.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $('#telefone').mask('(00)00000-0000');
+        $('#cep').mask('00000-000');
+        $('#Data_de_Nascimento').mask('00/00/0000')
+    })
+    </script>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>

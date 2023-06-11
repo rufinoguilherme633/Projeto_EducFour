@@ -1,0 +1,92 @@
+.container_about_us {
+    width: 100%;
+    gap: 24vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.about img{
+    height: 45vh;
+}
+.about_reverse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    font-size: 70px;
+}
+.about_reverse img{
+    height: 30vh;
+}
+.text_about_us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 30px;
+}
+
+.paragraph_about_us {
+    font-size: 2.5rem;
+    width: 40vw;
+}
+
+.container_text_about_us {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.us {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+}
+.contact{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.contact::before{
+    content: "Entre em contato.";
+    background-color: #0005;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: grid;
+    place-content: center;
+    font-weight: 700;
+    transform: translateY(100%);
+    transition: transform .5s;
+    border-radius: 100%;
+    color: var(--dark-red);
+}
+.contact:hover::before{
+    transform: translateY(0%);
+}
+.creators {
+    display: flex;
+    gap: 5vw;
+}
+.info{
+    text-align: center;
+    color: var(--dark-red);
+    font-weight: 600;
+}
+
+.creator img {
+    border-radius: 100%;
+    height: 30vh;
+}

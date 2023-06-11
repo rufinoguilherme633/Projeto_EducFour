@@ -1,0 +1,28 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container_adms{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+
+   
+}
+.container_Adm{
+    display: flex;
+    flex-direction: row;
+}
+
+.container_info_adm{
+    padding:5px 150px 5px 150px;
+    font-weight: bold;
+    border: 1px solid black;
+  
+}
