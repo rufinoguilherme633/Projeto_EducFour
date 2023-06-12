@@ -11,6 +11,36 @@
   <link rel="stylesheet" href="../css/subscriptions.css">
   <script src="../js/view_users.js" defer type="module"></script>
   <title>EducFour</title>
+  <style>
+  p {
+      background-color: rgb(134, 147, 152);
+      margin-top: -20px;
+      width: 820px;
+      display: flex;
+      font-size: 1.1rem;
+      display: flex;
+      padding-left: 20px;
+    }
+    .subs_container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90vw;
+      height: 90vh;
+      gap: 10px;
+      padding-top: 250px;
+    }
+    .last{
+      padding-bottom: 20px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    .first{
+      padding-top: 20px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  </style>
 </head>
 
 <body>
@@ -25,6 +55,12 @@
       <a href="./view_subscriptions.html">
         <img src="../img/registrations.png" alt="" class="registrations-image">
       </a>
+      <a href="./view_and_delete_news.html">
+        <img src="../img/news_delete.png" alt="" class="registrations-image">
+    </a>
+    <a href="./adm_delete.html">
+      <img src="../img/adm_delete.png" alt="" class="registrations-image">
+    </a>
     </div>
   </header>
   <main>
@@ -34,10 +70,78 @@
     <span class="title">Inscrições</span>
     <article>
       <div id="subs_container" class="subs_container">
-        <!-- Os dados serão preenchidos aqui -->
+       
       </div>
+      <div class="teste"></div>
     </article>
   </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch('http://localhost:5050/v1/educ_four/users/get')
+        .then(response => response.json())
+        .then(data => {
+          const subsContainer = document.getElementById("subs_container");
+          const users = data.usuarios;
+
+          users.forEach(user => {
+            let userInfo = '';
+            
+            if (user.nome) {
+              userInfo += `<p class="first"><strong>Nome:</strong> ${user.nome}</p>`;
+            }
+            if (user.cnpj) {
+              userInfo += `<p><strong>CNPJ:</strong> ${user.cnpj}</p>`;
+            }
+            if (user.cpf) {
+              userInfo += `<p><strong>CPF:</strong> ${user.cpf}</p>`;
+            }
+            if (user.rg) {
+              userInfo += `<p><strong>RG:</strong> ${user.rg}</p>`;
+            }
+            if (user.data_nascimento) {
+              userInfo += `<p><strong>Data de Nascimento:</strong> ${user.data_nascimento}</p>`;
+            }
+            if (user.declaracao_escolaridade) {
+              userInfo += `<p><strong>Declaração de Escolaridade:</strong> ${user.declaracao_escolaridade}</p>`;
+            }
+            if (user.email) {
+              userInfo += `<p><strong>Email:</strong> ${user.email}</p>`;
+            }
+            if (user.area_de_atuacao) {
+              userInfo += `<p><strong>Área de Atuação:</strong> ${user.area_de_atuacao}</p>`;
+            }
+            if (user.horarios_disponiveis) {
+              userInfo += `<p><strong>Horários Disponíveis:</strong> ${user.horarios_disponiveis}</p>`;
+            }
+            if (user.motivo_inscricao) {
+              userInfo += `<p><strong>Motivo da Inscrição:</strong> ${user.motivo_inscricao}</p>`;
+            }
+            if (user.cep) {
+              userInfo += `<p><strong>CEP:</strong> ${user.cep}</p>`;
+            }
+            if (user.logradouro) {
+              userInfo += `<p><strong>Logradouro:</strong> ${user.logradouro}</p>`;
+            }
+            if (user.bairro) {
+              userInfo += `<p ><strong>Bairro:</strong> ${user.bairro}</p>`;
+            }
+            if (user.cidade) {
+              userInfo += `<p><strong>Cidade:</strong> ${user.cidade}</p>`;
+            }
+            if (user.telefone) {
+              userInfo += `<p class="last"><strong>Telefone:</strong> ${user.telefone}</p>
+              <br>`;
+            }
+            
+            const userDiv = document.createElement('div');
+            userDiv.innerHTML = userInfo;
+            subsContainer.appendChild(userDiv);
+          });
+        })
+        .catch(error => console.log(error));
+    });
+  </script>
 </body>
 
 </html>

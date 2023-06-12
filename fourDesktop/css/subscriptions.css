@@ -5,10 +5,9 @@
     overflow: auto;
 }
 .subs_container{
-    width: 1200px;
-    height: 280px;
-    background: #D9D9D9;
-    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow:auto;
 }
 article {
     display: flex;
@@ -17,4 +16,11 @@ article {
     display: flex;
     align-items: center;
     padding-top: 9vh;
+}
+header{
+    position: fixed;
+    height: 100%;
+}
+.title{
+    padding-left: 15vw;
 }

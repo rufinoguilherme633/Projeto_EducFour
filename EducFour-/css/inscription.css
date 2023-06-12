@@ -50,11 +50,14 @@
     width: 100%;
     
 }
+#motivo_inscricao{
 
-
+    width: 2000px;
+}
 .input::placeholder, .text_register {
     color: #737373; /* Cor do placeholder */
     font-size: 1rem;
+    width: 200px;
 }
 
 .file-input {

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/register.css">
+  <script src="../js/postadm.js" defer type="module"></script>
+  <title>EducFour</title>
+  <style>
+    header {
+      position: fixed;
+      height: 100%;
+    }
+
+    .title {
+      margin-left: 200px;
+    }
+
+    .subs_container {
+      margin-left: 200px;
+      margin-top: 20px;
+    }
+
+    .news-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+
+    .news-card {
+      width: calc(33.33% - 20px);
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      position: relative;
+    }
+
+    .news-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .delete-button {
+        background: none; 
+        border: none; 
+        cursor: pointer; 
+        position: absolute; 
+        top: 10px; 
+        right: 10px; 
+        width: 50px; 
+        height: 20px; 
+        margin-top:50px;
+    }
+
+    .delete-button img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="images-container_header">
+      <a href="./publish_new.html">
+        <img src="../img/newspaper.png" alt="" class="newspaper-image">
+      </a>
+      <a href="./register.html">
+        <img src="../img/register_adm.png" alt="" class="register-adm-image">
+      </a>
+      <a href="./view_subscriptions.html">
+        <img src="../img/registrations.png" alt="" class="registrations-image">
+      </a>
+      <a href="./view_and_delete_news.html">
+        <img src="../img/news_delete.png" alt="" class="registrations-image">
+      </a>
+      <a href="./adm_delete.html">
+        <img src="../img/adm_delete.png" alt="" class="registrations-image">
+      </a>
+    </div>
+  </header>
+  <main>
+    <div class="container_logo">
+      <img src="../img/logo.png" alt="" class="logo">
+    </div>
+    <span class="title">Noticias</span>
+    <article>
+      <div id="subs_container" class="subs_container">
+
+      </div>
+      <div class="teste"></div>
+    </article>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const subsContainer = document.getElementById("subs_container");
+
+      fetch('http://localhost:5050/v1/educ_four/news/get')
+        .then(response => response.json())
+        .then(data => {
+          const news = data.news;
+
+          news.forEach(newsItem => {
+            const newsCard = document.createElement('div');
+            newsCard.className = 'news-card';
+
+            const deleteButton = document.createElement('button');
+            deleteButton.className = 'delete-button';
+            deleteButton.innerHTML = '<img src="../img/lixeira.png" alt="" srcset="">';
+            deleteButton.addEventListener('click', () => handleCardClick(newsItem.id));
+            newsCard.appendChild(deleteButton);
+
+            const title = document.createElement('h2');
+            title.textContent = newsItem.titulo;
+            newsCard.appendChild(title);
+
+            const author = document.createElement('p');
+            author.textContent = `Autor: ${newsItem.nome_autor}`;
+            newsCard.appendChild(author);
+
+            const description = document.createElement('p');
+            description.textContent = `Descrição: ${newsItem.descricao}`;
+            newsCard.appendChild(description);
+
+            const coverImage = document.createElement('img');
+            coverImage.src = newsItem.capa_noticia;
+            newsCard.appendChild(coverImage);
+
+            const theme = document.createElement('p');
+            theme.textContent = `Tema: ${newsItem.tema}`;
+            newsCard.appendChild(theme);
+
+            const newsDate = document.createElement('p');
+            newsDate.textContent = `Data: ${newsItem.data_noticia}`;
+            newsCard.appendChild(newsDate);
+
+            const newsBody = document.createElement('p');
+            newsBody.textContent = `Corpo: ${newsItem.corpo_noticia}`;
+            newsCard.appendChild(newsBody);
+
+            subsContainer.appendChild(newsCard);
+          });
+        })
+        .catch(error => console.log(error));
+    });
+
+    function handleCardClick(newsId) {
+      const confirmDelete = confirm('Deseja realmente excluir esta notícia?');
+      if (confirmDelete) {
+        const deleteUrl = `http://localhost:5050/v1/educ_four/news/delete/${newsId}`;
+        fetch(deleteUrl, { method: 'DELETE' })
+          .then(response => response.json())
+          .then(data => {
+            alert('Notícia excluída com sucesso!');
+            location.reload();
+          })
+          .catch(error => console.log(error));
+      }
+    }
+  </script>
+</body>
+
+</html>

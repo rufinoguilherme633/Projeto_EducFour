@@ -10,15 +10,11 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/register.css">
-    <!-- <script src="./js/index.js" defer type="module"></script> -->
-    <script src="../js/postpublish_new.js" defer type="module"></script>
     <title>EducFour</title>
 </head>
 
 <body>
-
     <header>
-
         <div class="images-container_header">
             <a href="./publish_new.html">
                 <img src="../img/newspaper.png" alt="" class="newspaper-image">
@@ -29,6 +25,12 @@
             <a href="./view_subscriptions.html">
                 <img src="../img/registrations.png" alt="" class="registrations-image">
             </a>
+            <a href="./view_and_delete_news.html">
+                <img src="../img/news_delete.png" alt="" class="registrations-image">
+            </a>
+            <a href="./adm_delete.html">
+                <img src="../img/adm_delete.png" alt="" class="registrations-image">
+              </a>
         </div>
     </header>
     <main>
@@ -36,40 +38,25 @@
             <img src="../img/logo.png" alt="" class="logo">
         </div>
 
-
         <span class="title">Publicar</span>
 
         <div class="newspaper">
-
             <form action="" class="form_newspapper">
-
-                <div class="custom-file-input">
-                    <input type="file" id="imagem" name="imagem" accept="image/*">
-                    <label for="imagem" class="custom-file-label">IMG</label>
-                </div>
-
-
-
                 <div class="newspaper_information_text">
                     <input type="text" id="titulo" name="titulo" class="input" placeholder="Título" maxlength="45">
-
                     <input type="text" id="descricao" name="descricao" class="input" placeholder="Descrição" maxlength="100">
-
                     <input type="text" id="autor" name="autor" class="input" placeholder="Autor" maxlength="90">
-
                     <input type="date" id="data" name="data" class="input" placeholder="Data" maxlength="45"> 
-
-                    <input type="text" id="tema" name="tema" class="input" placeholder="tema" maxlength="45">
-
-                    <textarea name="" id="corpo_noticia" cols="30" rows="" name="" id="" cols="30" name=""class="text_news" placeholder="" rows="" maxlength="145" ></textarea>
-
-
+                    <input type="text" id="tema" name="tema" class="input" placeholder="Tema" maxlength="45">
+                    <textarea id="corpo_noticia" name="corpo_noticia" class="text_news" placeholder="Corpo da notícia" rows="5" maxlength="145"></textarea>
+                    <input type="text" id="imagem" name="imagem" class="input" placeholder="URL da imagem">
                     <button type="button" class="button_login" id="saveButtonnews">Salvar</button>
                 </div>
-
             </form>
         </div>
     </main>
+
+    <script src="../js/postpublish_new.js" defer type="module"></script>
 </body>
 
 </html>

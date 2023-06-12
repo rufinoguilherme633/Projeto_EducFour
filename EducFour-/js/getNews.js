@@ -33,10 +33,14 @@ const criarCards = (newspaper) => {
   date.classList.add("date");
   date.textContent = newspaper.data_noticia; // Defina a data da notícia
 
+  const body_news = document.createElement("span")
+  body_news.classList.add("body_news")
+  body_news.textContent = newspaper.corpo_noticia
+
   containernewspaper.appendChild(title);
   containernewspaper.appendChild(description);
   containernewspaper.appendChild(date);
-
+  containernewspaper.appendChild(body_news)
   card.appendChild(img);
   card.appendChild(containernewspaper);
 
@@ -59,27 +63,3 @@ const load_all_newspapers = async () => {
 
 
 load_all_newspapers()
-
-
-  
-//   const criarCards = (newspaper) => {
-//     const card = document.createElement("div"); 
-//     card.classList.add("new");
-
-//     const img = document.createElement("img");
-//     img.classList.add("news_img");
-
-
-//     const containernewspaper = document.createElement("div"); 
-//     containernewspaper.classList.add("news_content");
-
-//     const title = document.createElement("p");
-//     title.classList.add("title_news");
-
-//     const description = document.createElement("p");
-//     description.classList.add("news_description");
-
-
-//     const date = document.createElement("span");
-//     date .classList.add("date");
-// }

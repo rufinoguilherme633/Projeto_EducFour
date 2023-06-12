@@ -120,8 +120,12 @@ document.getElementById("registerForm").addEventListener("submit", function(even
     .then(result => {
       console.log("Resposta da API:", result);
       // Faça algo com a resposta da API, se necessário
+
+      // Exibir o alerta após o envio do formulário
+      alert("Inscrição feita, aguarde o contato da nossa equipe");
     })
     .catch(error => {
       console.error("Ocorreu um erro:", error);
     });
+
 });

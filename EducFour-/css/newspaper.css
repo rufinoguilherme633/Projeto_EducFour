@@ -11,7 +11,7 @@ header{
     width: 90%;
     overflow:auto; 
 }
-.news_container{
+ .news_container{
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -21,12 +21,7 @@ header{
 }
 .new{
     background-color: #fff;
-    border-top: 2px solid var(--light-grey);
-    height: 20vh;
-    width: 50%;
-    display: flex;
-    gap: 32px;
-    align-items: center;
+    padding: 20px;
 }
 .new_description{
     width: 80%;
@@ -61,4 +56,4 @@ header{
     height: 50vh;
     padding-top: 10px;
     padding-left: 10px;
-}
+} 
