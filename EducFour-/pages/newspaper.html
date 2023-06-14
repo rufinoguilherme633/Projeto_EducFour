@@ -24,7 +24,12 @@
 <body>
         <header>
                 <p class="title"><span style="color: #D22020;font-weight: 700">Jornal</span></p>
-            </a>
+                <select id="order-select">
+                    <option value="asc" id="asc-option">Crescente</option>
+                    <option value="desc" id="desc-option">Decrescente</option>
+                  </select>
+                  
+            <!-- </a> -->
             <nav>
                 <i onclick="openNavHalf()" id="icon-half-menu" class="fas fa-bars"></i>
                 <ul id="mySidenav" class="sidenav">
@@ -51,7 +56,7 @@
         </header>
         <main>
             <div class="news">
-                <div class="news_container">
+                <div class="news_container" id="news_container"></div>
                     <div class="new">
                         <img id="news_img" class= "news_img"src="" alt="">
                     <div class="news_content">

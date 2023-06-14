@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
               .catch(error => {
                   // Lógica a ser executada em caso de erro na requisição
                   console.error(error);
+                  alert('Erro, preencha todos os campos')
               });
       }
 

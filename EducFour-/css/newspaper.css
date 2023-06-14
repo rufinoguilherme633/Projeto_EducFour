@@ -43,6 +43,7 @@ header{
     color: var(--light-red);
     font-weight: 700;
     font-size: 1.2rem;
+    width: 800px;
 }
 .news_description{
     color: var(--dark-grey);
