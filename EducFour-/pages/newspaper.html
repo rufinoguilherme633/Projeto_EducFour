@@ -22,63 +22,63 @@
 </head>
 
 <body>
-        <header>
-                <p class="title"><span style="color: #D22020;font-weight: 700">Jornal</span></p>
-                <select id="order-select">
-                    <option value="asc" id="asc-option">Crescente</option>
-                    <option value="desc" id="desc-option">Decrescente</option>
-                  </select>
-                  
-            <!-- </a> -->
-            <nav>
-                <i onclick="openNavHalf()" id="icon-half-menu" class="fas fa-bars"></i>
-                <ul id="mySidenav" class="sidenav">
-                    <li>
-                        <a href="#" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
-                    </li>
-                    <li>
-                        <a href="../index.html">Página Inicial</a>
-                    </li>
-                    <li>
-                        <a href="./inscription.html">Inscrição</a>
-                    </li>
-                    <li>
-                        <a href="./timeline.html">Cronograma</a>
-                    </li>
-                    <li>
-                        <a href="./projects.html">Projetos</a>
-                    </li>
-                    <li>
-                        <a href="./about_us.html">Sobre Nós</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div class="news">
-                <div class="news_container" id="news_container"></div>
-                    <div class="new">
-                        <img id="news_img" class= "news_img"src="" alt="">
-                    <div class="news_content">
-                        <p class="title_news"></p>
-                        <p class="news_description"></p>
-                        <p class="news_body"></p>
-                        <span></span> 
-                    </div>
+    <header>
+        <p class="title"><span style="color: #D22020;font-weight: 700">Jornal</span></p>
+        <select id="order-select">
+            <option value="asc" id="asc-option">Recentes</option>
+            <option value="desc" id="desc-option">Antigas</option>
+        </select>
+
+        <!-- </a> -->
+        <nav>
+            <i onclick="openNavHalf()" id="icon-half-menu" class="fas fa-bars"></i>
+            <ul id="mySidenav" class="sidenav">
+                <li>
+                    <a href="#" class="closebtn" onclick="closeNav()"><i class="fas fa-times"></i></a>
+                </li>
+                <li>
+                    <a href="../index.html">Página Inicial</a>
+                </li>
+                <li>
+                    <a href="./inscription.html">Inscrição</a>
+                </li>
+                <li>
+                    <a href="./timeline.html">Cronograma</a>
+                </li>
+                <li>
+                    <a href="./projects.html">Projetos</a>
+                </li>
+                <li>
+                    <a href="./about_us.html">Sobre Nós</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="news">
+            <div class="news_container" id="news_container"></div>
+            <div class="new">
+                <img id="news_img" class="news_img" src="" alt="">
+                <div class="news_content">
+                    <p class="title_news"></p>
+                    <p class="news_description"></p>
+                    <p class="news_body"></p>
+                    <span></span>
+                </div>
             </div>
-        </main>
-        <footer>
-        </footer>
-        <div vw class="enabled">
-            <div vw-access-button class="active"></div>
-            <div vw-plugin-wrapper>
-              <div class="vw-plugin-top-wrapper"></div>
-            </div>
-          </div>
-          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-          <script>
-            new window.VLibras.Widget('https://vlibras.gov.br/app');
-          </script>
+    </main>
+    <footer>
+    </footer>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 
 </html>

@@ -22,6 +22,7 @@ header{
 .new{
     background-color: #fff;
     padding: 20px;
+    width: 100%;
 }
 .new_description{
     width: 80%;
