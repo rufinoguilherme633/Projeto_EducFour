@@ -10,11 +10,13 @@ header{
     color: #000;
     width: 90%;
     overflow:auto; 
+  
 }
  .news_container{
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
 }
 .new_container{
     width: 90%;
@@ -23,6 +25,7 @@ header{
     background-color: #fff;
     padding: 20px;
     width: 100%;
+    
 }
 .new_description{
     width: 80%;
@@ -45,6 +48,7 @@ header{
     font-weight: 700;
     font-size: 1.2rem;
     width: 800px;
+   
 }
 .news_description{
     color: var(--dark-grey);
