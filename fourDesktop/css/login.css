@@ -8,11 +8,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.image_logo{
-    width: 11.5vw;
-    height: 15vh;
+.image_logo {
+    width: 9vw;
+    height: 14vh;
+  
 }
-.container_login{
+
+.container_login {
     width: 33vw;
     height: 90%;
     background-color: white;
@@ -22,7 +24,7 @@ body {
     border-radius: 30px;
 }
 
-.image_header{
+.image_header {
     width: 100%;
     height: max-content;
     display: flex;
@@ -31,43 +33,45 @@ body {
     padding: 20px 0 20px 0;
 }
 
-.text_login{
+.text_login {
     font-size: 3.5rem;
-    color:#D22020;
+    color: #D22020;
     font-weight: 600;
 }
 
-.container_register{
+.container_register {
     display: flex;
     flex-direction: column;
 }
 
-.text_user,.text_password {
-    color:#D22020;
+.text_user,
+.text_password {
+    color: #D22020;
     font-weight: 600;
     font-size: 1.5rem;
 }
+
 .form {
-    
     display: flex;
     flex-direction: column;
-   gap: 7vh;
+    gap: 5vh;
+    justify-content: space-evenly;
     display: flex;
     height: max-content;
     align-items: center;
     padding-top: 9vh;
 }
 
-.input{
+.input {
     border-radius: 10px;
     border: solid 1px #737373;
-    padding: 0.3vw;  
+    padding: 0.3vw;
     width: 22vw;
-    height:4vh;
+    height: 4vh;
 }
 
-.button_login{
-    background-color:#D22020 ;
+.button_login {
+    background-color: #D22020;
     color: white;
     font-weight: 600;
     font-size: 1.3rem;
@@ -77,8 +81,189 @@ body {
     border: none;
 }
 
-.password .user .email{
+.password,
+.user,
+.email {
     display: flex;
     flex-direction: column;
 }
 
+@media (max-width: 1500px) { 
+    .container_login {
+        /* background-color: red; */
+        width: 40vw;
+    }
+    .input {
+        width: 30vw;
+        height: 5vh;
+    }
+    .button_login {
+        width: 10vw;
+        height: 7vh;
+    }
+}
+
+@media (max-width: 1300px) { 
+    .container_login {
+        /* background-color: red; */
+        width: 50vw;
+        /* background-color: #D22020; */
+    }
+    .input {
+        width: 38vw;
+        height: 5vh;
+    }
+    .button_login {
+        width: 10vw;
+        height: 7vh;
+    }
+    .image_header img {
+        width: 13vw;
+        height: 17vh;
+    }
+}
+
+@media (max-width: 1000px) {
+    .password,
+    .user {
+        display: flex;
+        flex-direction: column;
+        /* background-color: blue; */
+    }
+    .container_login {
+        /* background-color: red; */
+        width: 50vw;
+    }
+    .image_header img {
+        width: 12vw;
+        height: 17vh;
+    }
+    .input {
+        width: 40vw;
+        height: 5vh;
+    }
+    .button_login {
+        width: 15vw;
+        height: 7vh;
+    }
+
+    .image_header img {
+        width: 15vw;
+        height: 17vh;
+    }
+}
+
+@media (max-width: 900px) {
+    .container_login {
+        /* background-color: blue; */
+        width: 50vw;
+    }
+    .image_header img {
+        width: 15vw;
+        height: 18vh;
+    }
+    .image_header {
+        /* background-color: red; */
+    }
+    .button_login {
+        width: 17vw;
+        height: 8vh;
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .container_login {
+        /* background-color: yellow; */
+        width: 55vw;
+    }
+    .image_header img {
+        width: 16vw;
+        height: 16vh;
+    }
+    .input {
+        width: 48vw;
+        height: 5vh;
+    }
+    .button_login {
+        width: 20vw;
+        height: 8vh;
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 700px) {
+    .container_login {
+        /* background-color: pink; */
+        width: 60vw;
+    }
+    .image_header img {
+        width: 18vw;
+        height: 16vh;
+    }
+    .input {
+        width: 53vw;
+        height: 5vh;
+    }
+    .button_login {
+        width: 23vw;
+        height: 8vh;
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .container_login {
+        /* background-color: red; */
+        width: 65vw;
+    }
+    .image_header img {
+        width: 21vw;
+        height: 16vh;
+    }
+    .input {
+        width: 58vw;
+        height: 5vh;
+    }
+    .button_login {
+        width: 25vw;
+        height: 8vh;
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .container_login {
+        /* background-color: orange; */
+        width: 70vw;
+    }
+    .image_header img {
+        width: 24vw;
+        height: 16vh;
+    }
+    .input {
+        width: 63vw;
+        height: 5vh;
+    }
+    .button_login {
+        width: 30vw;
+        height: 8vh;
+        font-size: 4.5vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .image_header img {
+        width: 30vw;
+        height: 16vh;
+    }
+    .container_login {
+        /* background-color: green; */
+        width: 85vw;
+    }
+    .button_login {
+        width: 30vw;
+        height: 8vh;
+        font-size: 5vw;
+    }
+}
